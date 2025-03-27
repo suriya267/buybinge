@@ -1,54 +1,38 @@
-# React + TypeScript + Vite
+# React Shopping Cart App
+  This is a simple e-commerce web application built with ReactJS, React Router, and Tailwind CSS. The app fetches product data from the Fake Store API and allows users to add, remove, and modify products in their cart. The total price is dynamically updated, and a 10% discount is applied to the final cart total.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Features
+  Home Page: Displays a list of products fetched from the Fake Store API.
+  View Cart Page: Displays items added to the cart, showing product details such as name, price, quantity, and total price.
 
-Currently, two official plugins are available:
+  Add/Remove Items: Users can add products to the cart and remove them as needed. If a product is in the cart, the "Add to Cart" button changes to "Remove from Cart".
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  Cart Quantity Control: Users can increase or decrease the quantity of items in the cart, and the price is dynamically updated accordingly.
 
-## Expanding the ESLint configuration
+  Total Price Calculation: The cart page dynamically updates the total price as items are added, removed, or their quantities are changed. A 10% discount is applied to the final price.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Tech Stack
+  ReactJS: For building the user interface and managing the state.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+  React Router: For navigation between the Product Page and the Cart Page.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+  Tailwind CSS: For responsive and modern UI styling.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+  JavaScript and TypeScript: For the logic and functionality of the app.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+  Fake Store API: For fetching product data.
+
+# Installation
+  Ensure you have Node.js and npm installed on your machine. You can download them from nodejs.org.
+
+# Steps to Set Up
+  Clone the repository: git clone https://github.com/suriya267/buybinge.git
+
+# Technologies Used
+  ReactJS: For building dynamic and responsive UI components.
+
+  React Router: For easy navigation between different pages (Product Page and Cart Page).
+
+  Tailwind CSS: For styling the UI with utility-first CSS classes.
+
+  Fake Store API: Provides product data for the app.
