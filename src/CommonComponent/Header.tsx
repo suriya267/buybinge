@@ -8,7 +8,7 @@ export default function Header(props: any) {
     <div className="p-2 ">
       <div className="grid grid-cols-8">
         <div className="col-span-2 font-[Roboto-bold] text-[35px] text-[#f0f5ff] mx-2">
-          BuyBinge
+          BB
         </div>
         <div className="col-span-4 flex items-center">
           <SearchBar isView={isView} />
